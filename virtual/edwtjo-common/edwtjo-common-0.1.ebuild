@@ -110,7 +110,7 @@ DEPEND="app-admin/eselect-maven
 		sys-libs/gpm
 		sys-libs/ncurses
 		sys-libs/readline
-		sys-lib/zlib
+		sys-libs/zlib
 		sys-power/powertop
 		sys-process/fcron
 		sys-process/htop
