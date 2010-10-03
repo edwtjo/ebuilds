@@ -41,10 +41,8 @@ DEPEND="app-admin/eselect-maven
 		dev-haskell/alut
 		dev-haskell/ansi-terminal
 		dev-haskell/ansi-wl-pprint
-		dev-haskell/arrows
 		dev-haskell/binary
 		dev-haskell/bzlib
-		dev-haskell/c2hs
 		dev-haskell/cabal
 		dev-haskell/cabal-install
 		dev-haskell/cgi
@@ -66,7 +64,6 @@ DEPEND="app-admin/eselect-maven
 		dev-haskell/haskeline
 		dev-haskell/haskell-src
 		dev-haskell/haskell-src-exts
-		dev-haskell/haxml
 		dev-haskell/hdbc
 		dev-haskell/hdbc-odbc
 		dev-haskell/hdbc-postgresql
@@ -76,9 +73,7 @@ DEPEND="app-admin/eselect-maven
 		dev-haskell/hscolour
 		dev-haskell/hslogger
 		dev-haskell/hsql
-		dev-haskell/hsql-mysql
 		dev-haskell/hsql-odbc
-		dev-haskell/hsql-postgresql
 		dev-haskell/hsql-sqlite
 		dev-haskell/html
 		dev-haskell/http
@@ -108,9 +103,7 @@ DEPEND="app-admin/eselect-maven
 		dev-haskell/test-framework-quickcheck2
 		dev-haskell/time
 		dev-haskell/utf8-string
-		dev-haskell/uuagc
 		dev-haskell/uulib
-		dev-haskell/wash
 		dev-haskell/wxcore
 		dev-haskell/wxdirect
 		dev-haskell/wxhaskell
