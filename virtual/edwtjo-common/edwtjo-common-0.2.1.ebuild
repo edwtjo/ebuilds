@@ -74,7 +74,6 @@ DEPEND="app-admin/eselect-maven
 		dev-haskell/hdbc-sqlite
 		dev-haskell/hdoc
 		dev-haskell/hinotify
-		dev-haskell/hmake
 		dev-haskell/hscolour
 		dev-haskell/hslogger
 		dev-haskell/hsql
