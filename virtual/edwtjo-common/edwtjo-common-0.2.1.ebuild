@@ -80,7 +80,6 @@ DEPEND="app-admin/eselect-maven
 		dev-haskell/hsql-odbc
 		dev-haskell/hsql-postgresql
 		dev-haskell/hsql-sqlite
-		dev-haskell/hsshellscript
 		dev-haskell/html
 		dev-haskell/http
 		dev-haskell/hunit
