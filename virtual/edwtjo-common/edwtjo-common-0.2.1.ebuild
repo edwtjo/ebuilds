@@ -64,7 +64,6 @@ DEPEND="app-admin/eselect-maven
 		dev-haskell/harp
 		dev-haskell/hashed-storage
 		dev-haskell/haskeline
-		dev-haskell/haskell-platform
 		dev-haskell/haskell-src
 		dev-haskell/haskell-src-exts
 		dev-haskell/haxml
