@@ -90,7 +90,6 @@ DEPEND="app-admin/eselect-maven
 		dev-haskell/iconv
 		dev-haskell/json
 		dev-haskell/language-c
-		dev-haskell/lhs2tex
 		dev-haskell/missingh
 		dev-haskell/mmap
 		dev-haskell/mtl
