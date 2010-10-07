@@ -28,7 +28,6 @@ DEPEND="
 		dev-haskell/stm
 		dev-haskell/hunit
 		dev-haskell/http
-		dev-haskell/arrows
 		dev-haskell/zlib
 		dev-haskell/alex
 		dev-haskell/alut
