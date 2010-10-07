@@ -28,7 +28,7 @@ DEPEND="
 		dev-haskell/stm
 		dev-haskell/hunit
 		dev-haskell/http
-		dev-haskell/directory
+		dev-haskell/directory-tree
 		dev-haskell/arrows
 		dev-haskell/zlib
 		dev-haskell/alex
