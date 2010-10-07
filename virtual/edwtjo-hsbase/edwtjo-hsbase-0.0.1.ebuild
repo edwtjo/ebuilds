@@ -50,7 +50,6 @@ DEPEND="
 		dev-haskell/frown
 		dev-haskell/ghc-paths
 		dev-haskell/glut
-		dev-haskell/gtk2hs
 		dev-haskell/haddock
 		dev-haskell/happy
 		dev-haskell/harp
@@ -70,7 +69,6 @@ DEPEND="
 		dev-haskell/hsql-odbc
 		dev-haskell/hsql-sqlite
 		dev-haskell/html
-		dev-haskell/hxt
 		dev-haskell/iconv
 		dev-haskell/json
 		dev-haskell/language-c
