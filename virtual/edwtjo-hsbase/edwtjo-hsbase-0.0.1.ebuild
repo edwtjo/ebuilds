@@ -101,6 +101,6 @@ src_compile() { :; }
 src_install() { :; }
 pkg_preinst() { :; }
 pkg_postinst() {
-	exec haskell-updater
+	haskell-updater
 }
 
