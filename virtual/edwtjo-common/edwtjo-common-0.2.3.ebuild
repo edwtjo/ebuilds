@@ -89,6 +89,7 @@ DEPEND="
 		sys-apps/texinfo
 		sys-apps/which
 		sys-boot/grub
+		sys-boot/syslinux
 		sys-devel/automake
 		sys-devel/bc
 		sys-devel/binutils
