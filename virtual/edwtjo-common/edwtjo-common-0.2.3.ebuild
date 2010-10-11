@@ -104,6 +104,7 @@ DEPEND="
 		sys-devel/patch
 		sys-fs/cryptsetup
 		sys-fs/e2fsprogs
+		sys-fs/dosfstools
 		sys-fs/lvm2
 		sys-fs/mdadm
 		sys-fs/udev
