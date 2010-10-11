@@ -11,9 +11,16 @@ contains the latter file:// entry, i.e.
                    file:///usr/local/portage/layman/own.xml
 
 and add this repository as an entry in /usr/local/portage/layman/own.xml, i.e.
-        <overlay contact="e __at__ cube2 __dot__ se" name="edwtjo-ebuilds" src="git://github.com/edwtjo/ebuilds" status="unofficial" type="git">
-        <link>git://github.com/edwtjo/ebuilds</link>
-        <description>Providing assorted non official ebuilds</description>
-        </overlay>
+        <overlays>
+          <overlay contact="e __at__ cube2 __dot__ se" name="edwtjo-ebuilds" src="git://github.com/edwtjo/ebuilds" 
+status="unofficial" type="git">
+            <link>git://github.com/edwtjo/ebuilds</link>
+            <description>Providing assorted non official ebuilds</description>
+          </overlay>
+        </overlays>
 
-Done
+And run
+
+        layman -a edwtjo-ebuilds
+
+
