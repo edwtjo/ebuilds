@@ -13,7 +13,7 @@ SLOT="0"
 KEYWORDS="~x86 ~amd64 ~mips ~sparc"
 IUSE="smartcard pkcs11 dev"
 
-DEPEND=">=app-crypt/openssl-0.9.8
+DEPEND=">=dev-libs/openssl-0.9.8
 		>=dev-libs/libp11-0.2.7
 		>=x11-libs/gtk+-2.20
 		smartcard? ( >=sys-apps/pcsc-lite-1.6.1 )
