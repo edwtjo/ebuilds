@@ -55,17 +55,10 @@ DEPEND="
 		dev-haskell/haskeline
 		dev-haskell/haskell-src
 		dev-haskell/haskell-src-exts
-		dev-haskell/hdbc
-		dev-haskell/hdbc-odbc
-		dev-haskell/hdbc-postgresql
-		dev-haskell/hdbc-sqlite
 		dev-haskell/hdoc
 		dev-haskell/hinotify
 		dev-haskell/hscolour
 		dev-haskell/hslogger
-		dev-haskell/hsql
-		dev-haskell/hsql-odbc
-		dev-haskell/hsql-sqlite
 		dev-haskell/html
 		dev-haskell/iconv
 		dev-haskell/json
