@@ -25,7 +25,6 @@ DEPEND="
 		app-arch/unzip
 		app-arch/tar
 		app-backup/duplicity
-		app-dicts/aspell
 		app-dicts/aspell-sv
 		app-dicts/aspell-uk
 		app-dicts/aspell-es
@@ -42,6 +41,7 @@ DEPEND="
 		app-shells/bash
 		app-shells/zsh
 		app-shells/zsh-completion
+		app-text/aspell
 		app-text/dictd
 		app-text/texlive
 		dev-java/sun-jdk
