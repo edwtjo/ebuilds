@@ -22,6 +22,7 @@ DEPEND="
 		app-office/openoffice
 		app-text/xpdf
 		app-text/xournal
+		app-text/ghostscript-gpl
 		dev-util/tkdiff
 		dev-vcs/giggle
 		www-plugins/fribid
@@ -55,8 +56,6 @@ DEPEND="
 		media-fonts/freefonts
 		media-fonts/freefont-ttf
 		media-fonts/fs-fonts
-		media-fonts/gnu-gs-fonts-other
-		media-fonts/gnu-gs-fonts-std
 		media-fonts/hunkyfonts
 		media-fonts/inconsolata
 		media-fonts/intlfonts
