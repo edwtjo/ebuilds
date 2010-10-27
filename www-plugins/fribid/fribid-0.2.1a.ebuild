@@ -34,7 +34,7 @@ src_configure() {
 		--disable-pkcs11 \
 		--datadir=/usr/share \
 		--prefix=/usr \
-		--plugin-path=/usr/lib/mozilla/plugins || die
+		--plugin-path=/usr/lib/nsbrowser/plugins || die
 }
 
 src_compile() {
@@ -51,5 +51,6 @@ pkg_postinst() {
 		sed -i -e "s|^# enable_pinpad = true|enable_pinpad = true|" \
 			/etc/opensc/opensc.conf
 	fi
+	chmod +x /usr/lib/fribid/libfribidplugin.so
 	elog "Congratulations! FriBID was successfully installed"
 }
