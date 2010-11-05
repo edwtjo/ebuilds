@@ -20,8 +20,6 @@ DEPEND="
 		dev-haskell/network
 		dev-haskell/parsec
 		dev-haskell/network
-		dev-haskell/opengl
-		dev-haskell/x11
 		dev-haskell/regex-base
 		dev-haskell/regex-compat
 		dev-haskell/regex-posix
@@ -44,10 +42,8 @@ DEPEND="
 		dev-haskell/digest
 		dev-haskell/drift
 		dev-haskell/editline
-		dev-haskell/fgl
 		dev-haskell/frown
 		dev-haskell/ghc-paths
-		dev-haskell/glut
 		dev-haskell/haddock
 		dev-haskell/happy
 		dev-haskell/harp
@@ -77,10 +73,6 @@ DEPEND="
 		dev-haskell/time
 		dev-haskell/utf8-string
 		dev-haskell/uulib
-		dev-haskell/wxcore
-		dev-haskell/wxdirect
-		dev-haskell/wxhaskell
-		dev-haskell/x11-xft
 		dev-haskell/xhtml
 		dev-haskell/zip-archive
 "
