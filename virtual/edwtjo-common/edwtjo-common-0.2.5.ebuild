@@ -16,10 +16,17 @@ DEPEND="
 		app-admin/eselect-maven
 		app-admin/syslog-ng
 		app-admin/sudo
+		app-arch/par2cmdline
 		app-arch/alien
 		app-arch/bzip2
 		app-arch/cpio
 		app-arch/deb2targz
+		app-arch/sharutils
+		app-arch/unarj
+		app-arch/bsdsfv
+		app-arch/cfv
+		app-arch/dpkg
+		app-arch/unrar
 		app-arch/p7zip
 		app-arch/unace
 		app-arch/unzip

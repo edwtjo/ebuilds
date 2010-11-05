@@ -47,7 +47,6 @@ DEPEND="virtual/edwtjo-common
 		dev-perl/Variable-Magic
 		dev-perl/libwww-perl
 		dev-python/cheetah
-		dev-python/par2cmdline
 		dev-python/pyopenssl
 		"
 RDEPEND="${DEPEND}"
