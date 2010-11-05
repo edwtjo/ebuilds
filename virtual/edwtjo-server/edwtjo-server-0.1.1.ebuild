@@ -15,17 +15,8 @@ IUSE=""
 
 DEPEND="virtual/edwtjo-common
 		app-misc/uptimed
-		sys-kernel/gentoo-sources
 		app-admin/sshguard
 		dev-lang/php
-		dev-perl/HTML-Parser
-		dev-perl/JSON-Any
-		dev-perl/List-MoreUtils
-		dev-perl/Sub-Identify
-		dev-perl/Sub-Install
-		dev-perl/Tie-ToObject
-		dev-perl/Try-Tiny
-		dev-perl/WWW-Shorten
 		dev-vcs/gitosis
 		net-dns/dnsmasq
 		net-dns/openresolv
@@ -33,7 +24,6 @@ DEPEND="virtual/edwtjo-common
 		net-firewall/iptables
 		net-irc/irssi
 		net-news/newsbeuter
-		perl-core/File-Temp
 		www-apache/mod_fastcgi
 		www-apache/mod_jk
 		www-apache/mod_proxy_html
@@ -41,11 +31,6 @@ DEPEND="virtual/edwtjo-common
 		www-client/elinks
 		www-servers/apache
 		www-servers/tomcat
-		dev-perl/JSON
-		dev-perl/Net-Twitter
-		dev-perl/Sub-Name
-		dev-perl/Variable-Magic
-		dev-perl/libwww-perl
 		dev-python/cheetah
 		dev-python/pyopenssl
 		"
