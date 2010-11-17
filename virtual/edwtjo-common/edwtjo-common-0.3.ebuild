@@ -52,6 +52,7 @@ DEPEND="
 		dev-vcs/git
 		dev-vcs/subversion
 		dev-vcs/mercurial
+		mail-client/mailx
 		media-gfx/imagemagick
 		net-analyzer/ettercap
 		net-analyzer/metasploit
