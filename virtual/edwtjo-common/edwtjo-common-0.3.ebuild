@@ -92,6 +92,7 @@ DEPEND="
 		sys-apps/man-pages
 		sys-apps/man-pages-posix
 		sys-apps/net-tools
+		sys-apps/smartmontools
 		sys-apps/openrc
 		sys-apps/pciutils
 		sys-apps/sed
