@@ -97,7 +97,7 @@ DEPEND="
 		sys-apps/pciutils
 		sys-apps/sed
 		sys-apps/shadow
-		sys-apps/mlocate
+		sys-apps/slocate
 		sys-apps/texinfo
 		sys-apps/which
 		sys-boot/grub
