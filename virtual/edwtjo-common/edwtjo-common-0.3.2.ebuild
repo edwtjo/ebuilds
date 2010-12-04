@@ -44,7 +44,7 @@ DEPEND="
 		app-text/aspell
 		app-text/dictd
 		app-text/texlive
-		app-text/texlive-xetex
+		app-texlive/texlive-xetex
 		dev-java/sun-jdk
 		dev-java/maven-bin
 		dev-java/java-config
