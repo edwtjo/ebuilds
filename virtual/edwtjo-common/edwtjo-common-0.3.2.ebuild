@@ -16,17 +16,10 @@ DEPEND="
 		app-admin/eselect-maven
 		app-admin/syslog-ng
 		app-admin/sudo
-		app-arch/par2cmdline
 		app-arch/alien
 		app-arch/bzip2
 		app-arch/cpio
 		app-arch/deb2targz
-		app-arch/sharutils
-		app-arch/unarj
-		app-arch/bsdsfv
-		app-arch/cfv
-		app-arch/dpkg
-		app-arch/unrar
 		app-arch/p7zip
 		app-arch/unace
 		app-arch/unzip
@@ -51,6 +44,7 @@ DEPEND="
 		app-text/aspell
 		app-text/dictd
 		app-text/texlive
+		app-text/texlive-xetex
 		dev-java/sun-jdk
 		dev-java/maven-bin
 		dev-java/java-config
@@ -59,10 +53,12 @@ DEPEND="
 		dev-vcs/git
 		dev-vcs/subversion
 		dev-vcs/mercurial
+		mail-client/mailx
 		media-gfx/imagemagick
 		net-analyzer/ettercap
 		net-analyzer/metasploit
-		net-analyzer/netcat
+		net-analyzer/nmap
+		net-analyzer/gnu-netcat
 		net-analyzer/netselect
 		net-analyzer/tptest
 		net-analyzer/wireshark
@@ -80,6 +76,8 @@ DEPEND="
 		net-misc/unison
 		net-misc/whois
 		net-misc/wget
+		net-nntp/slrn
+		net-nntp/nzbget
 		sys-apps/ack
 		sys-apps/baselayout
 		sys-apps/busybox
@@ -87,19 +85,21 @@ DEPEND="
 		sys-apps/diffutils
 		sys-apps/file
 		sys-apps/findutils
-		sys-apps/hal
 		sys-apps/gawk
 		sys-apps/grep
+		sys-apps/hdparm
 		sys-apps/iproute2
 		sys-apps/kbd
 		sys-apps/man-pages
 		sys-apps/man-pages-posix
 		sys-apps/net-tools
+		sys-apps/smartmontools
 		sys-apps/openrc
 		sys-apps/pciutils
+		sys-apps/pv
 		sys-apps/sed
 		sys-apps/shadow
-		sys-apps/slocate
+		sys-apps/mlocate
 		sys-apps/texinfo
 		sys-apps/which
 		sys-boot/grub
@@ -117,6 +117,7 @@ DEPEND="
 		sys-devel/llvm
 		sys-devel/patch
 		sys-fs/cryptsetup
+		sys-fs/ddrescue
 		sys-fs/e2fsprogs
 		sys-fs/dosfstools
 		sys-fs/lvm2
