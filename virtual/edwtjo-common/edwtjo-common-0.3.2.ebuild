@@ -44,7 +44,6 @@ DEPEND="
 		app-text/aspell
 		app-text/dictd
 		app-text/texlive
-		app-texlive/texlive-xetex
 		dev-java/sun-jdk
 		dev-java/maven-bin
 		dev-java/java-config
@@ -53,6 +52,7 @@ DEPEND="
 		dev-vcs/git
 		dev-vcs/subversion
 		dev-vcs/mercurial
+		dev-texlive/texlive-xetex
 		mail-client/mailx
 		media-gfx/imagemagick
 		net-analyzer/ettercap
