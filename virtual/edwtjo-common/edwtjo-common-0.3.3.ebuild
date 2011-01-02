@@ -105,7 +105,6 @@ DEPEND="
 		sys-apps/which
 		sys-boot/grub
 		sys-boot/syslinux
-		sys-boot/unetbootin
 		sys-devel/automake
 		sys-devel/bc
 		sys-devel/binutils
