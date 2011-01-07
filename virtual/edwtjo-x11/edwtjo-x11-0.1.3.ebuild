@@ -120,6 +120,7 @@ DEPEND="
 		media-gfx/feh
 		media-gfx/gimp
 		media-gfx/inkscape
+		media-gfx/scrot
 		media-libs/fontconfig
 		media-libs/freetype
 		media-libs/libpng
@@ -166,7 +167,9 @@ DEPEND="
 		media-fonts/liberation-fonts
 		media-fonts/terminus-font
 		www-client/firefox
+		sys-boot/unetbootin
 		x11-apps/xfontsel
+		x11-apps/xclipboard
 		x11-base/xorg-x11
 		x11-drivers/xf86-input-keyboard
 		x11-drivers/xf86-input-mouse
