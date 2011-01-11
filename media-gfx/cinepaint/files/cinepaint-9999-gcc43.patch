@@ -1,0 +1,22 @@
+diff -U 3 -r cinepaint.orig/plug-ins/icc_examin/icc_examin/icc_oyranos.cpp cinepaint/plug-ins/icc_examin/icc_examin/icc_oyranos.cpp
+--- cinepaint.orig/plug-ins/icc_examin/icc_examin/icc_oyranos.cpp	2009-07-20 05:32:35.000000000 +0200
++++ cinepaint/plug-ins/icc_examin/icc_examin/icc_oyranos.cpp	2009-07-20 05:40:32.000000000 +0200
+@@ -35,6 +35,7 @@
+ #include "icc_fenster.h"
+ #include "icc_info.h"
+ #include "config.h"
++#include <cstdlib>
+ using namespace icc_examin_ns;
+ 
+ #define BOOL LCMS_BOOL
+diff -U 3 -r cinepaint.orig/plug-ins/icc_examin/icc_examin/threads.cpp cinepaint/plug-ins/icc_examin/icc_examin/threads.cpp
+--- cinepaint.orig/plug-ins/icc_examin/icc_examin/threads.cpp	2009-07-20 05:32:35.000000000 +0200
++++ cinepaint/plug-ins/icc_examin/icc_examin/threads.cpp	2009-07-20 05:42:00.000000000 +0200
+@@ -42,6 +42,7 @@
+ #include <iostream>
+ #  if HAVE_PTHREAD_H
+ // Use POSIX threading...
++#include <climits>
+ 
+ int fl_create_thread(Fl_Thread& t, void *(*f) (void *), void* p)
+ {

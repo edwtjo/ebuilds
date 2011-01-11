@@ -1,0 +1,32 @@
+Index: cinepaint/lib/player.c
+===================================================================
+RCS file: /cvsroot/cinepaint/cinepaint-project/cinepaint/lib/player.c,v
+retrieving revision 1.5
+diff -u -r1.5 player.c
+--- cinepaint/lib/player.c	21 Feb 2006 08:24:05 -0000	1.5
++++ cinepaint/lib/player.c	18 Nov 2009 21:14:06 -0000
+@@ -474,7 +474,7 @@
+ 
+ void
+ gimp_layer_set_name (gint32  layer_ID,
+-		     char   *name)
++		     const char   *name)
+ {
+   GParam *return_vals;
+   int nreturn_vals;
+Index: cinepaint/lib/plugin_main.h
+===================================================================
+RCS file: /cvsroot/cinepaint/cinepaint-project/cinepaint/lib/plugin_main.h,v
+retrieving revision 1.11
+diff -u -r1.11 plugin_main.h
+--- cinepaint/lib/plugin_main.h	25 Oct 2007 10:17:36 -0000	1.11
++++ cinepaint/lib/plugin_main.h	18 Nov 2009 21:14:07 -0000
+@@ -402,7 +402,7 @@
+ DLL_API void          gimp_layer_set_mode                  (gint32        layer_ID,
+ 						    GLayerMode    mode);
+ DLL_API void          gimp_layer_set_name                  (gint32        layer_ID,
+-						    char         *name);
++						    const char         *name);
+ DLL_API void          gimp_layer_set_offsets               (gint32        layer_ID,
+ 						    gint          offset_x,
+ 						    gint          offset_y);

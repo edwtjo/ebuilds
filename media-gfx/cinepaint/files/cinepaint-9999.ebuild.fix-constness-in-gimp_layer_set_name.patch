@@ -1,0 +1,20 @@
+From f78cbe7f040e1db31e3bddddc88f0ef97eb78129 Mon Sep 17 00:00:00 2001
+From: Jan Scholz <Scholz@fias.uni-frankfurt.de>
+Date: Thu, 19 Nov 2009 00:45:05 +0100
+Subject: [PATCH] [cinepaint] fix constness in gimp_layer_set_name in 9999 ebuild
+
+this is my approach, a similar, maybe less intrusive variant would be
+the one found at http://bugs.gentoo.org/show_bug.cgi?id=288124
+---
+diff --git a/gentoo/overlay/media-video/cinepaint/cinepaint-9999.ebuild b/gentoo/overlay/media-video/cinepaint/cinepaint-9999.ebuild
+index a84a4cc..7aba848 100644
+--- a/gentoo/overlay/media-video/cinepaint/cinepaint-9999.ebuild
++++ b/gentoo/overlay/media-video/cinepaint/cinepaint-9999.ebuild
+@@ -50,6 +50,7 @@ src_prepare() {
+ 	epatch "${FILESDIR}/${P}-multiple_parameters_named.patch"
+ 	epatch "${FILESDIR}/${P}-implicitdecls.patch"
+ 	epatch "${FILESDIR}/${P}-rpath.patch"
++	epatch "${FILESDIR}/${P}-fix_gimp_layer_set_name_constness.patch"
+ 	einfo "running autogen.sh from cvs"
+ 	chmod a+x ./autogen.sh || die "chmod a+x ./autogen.sh in ${S} failed"
+ 	./autogen.sh || die "execution of ./autogen.sh in ${S} failed"
