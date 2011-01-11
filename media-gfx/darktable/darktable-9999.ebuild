@@ -3,7 +3,7 @@
 
 EAPI="2"
 GCONF_DEBUG="no"
-inherit gnome2 cmake-utils git
+inherit gnome2 cmake-utils git flag-o-matic
 unset SRC_URI
 
 DESCRIPTION="Darktable is a virtual lighttable and darkroom for photographers"
@@ -27,7 +27,7 @@ RDEPEND="dev-db/sqlite:3
 	gnome-keyring? ( gnome-base/gnome-keyring )
 	media-gfx/exiv2
 	media-libs/jpeg
-	media-libs/lcms
+	>=media-libs/lcms-2
 	>=media-libs/lensfun-0.2.3
 	gphoto? ( media-libs/libgphoto2 )
 	media-libs/libpng
@@ -49,5 +49,6 @@ src_configure() {
 		"$(cmake-utils_use_use gconf GCONF_BACKEND)"
 		"$(cmake-utils_use_use gphoto CAMERA_SUPPORT)"
 		"-DDONT_INSTALL_GCONF_SCHEMAS=ON" )
+	filter-flags -Werror
 	cmake-utils_src_configure
 }
