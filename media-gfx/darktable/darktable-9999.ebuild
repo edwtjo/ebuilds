@@ -50,5 +50,6 @@ src_configure() {
 		"$(cmake-utils_use_use gphoto CAMERA_SUPPORT)"
 		"-DDONT_INSTALL_GCONF_SCHEMAS=ON" )
 	filter-flags -Werror
+	sed -i 's|set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Werror")||g' ${S}/CMakeLists.txt
 	cmake-utils_src_configure
 }
