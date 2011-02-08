@@ -24,6 +24,7 @@ DEPEND="
 		app-text/xpdf
 		app-text/xournal
 		app-text/ghostscript-gpl
+		app-text/mupdf
 		dev-util/tkdiff
 		dev-vcs/giggle
 		www-plugins/fribid
@@ -46,7 +47,6 @@ DEPEND="
 		media-fonts/corefonts
 		media-fonts/cronyx-fonts
 		media-fonts/culmus
-		media-fonts/culmus-ancient
 		media-fonts/dina
 		media-fonts/droid
 		media-fonts/efont-unicode
@@ -120,6 +120,7 @@ DEPEND="
 		media-gfx/feh
 		media-gfx/gimp
 		media-gfx/inkscape
+		media-gfx/scrot
 		media-libs/fontconfig
 		media-libs/freetype
 		media-libs/libpng
@@ -166,6 +167,7 @@ DEPEND="
 		media-fonts/liberation-fonts
 		media-fonts/terminus-font
 		www-client/firefox
+		sys-boot/unetbootin
 		x11-apps/xfontsel
 		x11-apps/xclipboard
 		x11-base/xorg-x11
@@ -175,6 +177,7 @@ DEPEND="
 		x11-libs/libXft
 		x11-libs/libXinerama
 		x11-misc/dzen
+		x11-misc/xdotool
 		x11-misc/xtrlock
 		x11-terms/xterm
 		x11-wm/xmonad
