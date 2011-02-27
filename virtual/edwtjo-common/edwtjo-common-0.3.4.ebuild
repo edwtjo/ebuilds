@@ -47,6 +47,7 @@ DEPEND="
 		dev-java/sun-jdk
 		dev-java/maven-bin
 		dev-java/java-config
+		dev-python/psycopg
 		dev-util/lafilefixer
 		dev-util/strace
 		dev-vcs/git
@@ -90,6 +91,7 @@ DEPEND="
 		sys-apps/hdparm
 		sys-apps/iproute2
 		sys-apps/kbd
+		sys-apps/lshw
 		sys-apps/man-pages
 		sys-apps/man-pages-posix
 		sys-apps/net-tools
