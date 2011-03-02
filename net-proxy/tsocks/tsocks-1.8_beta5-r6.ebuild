@@ -19,9 +19,9 @@ IUSE="tordns"
 S="${WORKDIR}/${P%%_*}"
 
 src_prepare() {
-	epatch "${FILESDIR}/${P}-gentoo-r3.patch"
-	epatch "${FILESDIR}/${P}-bsd.patch"
-	epatch "${FILESDIR}/${P}-poll.patch"
+	epatch "${FILESDIR}/gentoo-r3.patch"
+	epatch "${FILESDIR}/bsd.patch"
+	epatch "${FILESDIR}/poll.patch"
 	use tordns && epatch "../${PN}-${PV/_beta/b}-tordns1-gentoo-r1.patch"
 	eautoreconf
 }
