@@ -22,5 +22,7 @@ IUSE=""
 RDEPEND="dev-lang/erlang"
 DEPEND="${RDEPEND}"
 
+LDLFAGS=""
+
 PATCHES=()
 
