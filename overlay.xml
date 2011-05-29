@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+  <repo quality="experimental" status="unofficial">
+    <name>edwtjo-ebuilds</name>
+    <description>Providing assorted non official ebuilds</description>
+    <homepage>https://github.com/edwtjo/ebuilds</homepage>
+    <owner>
+      <email>e@cube2.se</email>
+      <name>Edward Tjörnhammar</name>
+    </owner>
+    <source type="git">git://github.com/edwtjo/ebuilds.git</source>
+  </repo>
+</repositories>
