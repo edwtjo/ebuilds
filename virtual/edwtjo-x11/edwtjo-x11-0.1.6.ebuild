@@ -24,6 +24,7 @@ DEPEND="
 		app-text/xpdf
 		app-text/xournal
 		app-text/ghostscript-gpl
+		app-text/mupdf
 		dev-util/tkdiff
 		dev-vcs/giggle
 		www-plugins/fribid
@@ -41,12 +42,10 @@ DEPEND="
 		media-fonts/artwiz-latin1
 		media-fonts/baekmuk-fonts
 		media-fonts/bitstream-cyberbit
-		media-fonts/cardo
 		media-fonts/cheapskatefonts
 		media-fonts/corefonts
 		media-fonts/cronyx-fonts
 		media-fonts/culmus
-		media-fonts/culmus-ancient
 		media-fonts/dina
 		media-fonts/droid
 		media-fonts/efont-unicode
@@ -177,6 +176,7 @@ DEPEND="
 		x11-libs/libXft
 		x11-libs/libXinerama
 		x11-misc/dzen
+		x11-misc/xdotool
 		x11-misc/xtrlock
 		x11-terms/xterm
 		x11-wm/xmonad

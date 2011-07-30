@@ -22,9 +22,7 @@ DEPEND="
 		games-strategy/wesnoth
 		media-video/guvcview
 		media-video/luvcview
-		net-wireless/iwl3945-ucode
 		net-wireless/wpa_supplicant
-		sys-apps/915resolution
 		media-sound/jack-rack
 		media-sound/qjackctl
 		media-gfx/scantailor
