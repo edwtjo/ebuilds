@@ -25,6 +25,7 @@ DEPEND="
 		app-arch/unzip
 		app-arch/tar
 		app-backup/duplicity
+		app-crypt/gnupg
 		app-dicts/aspell-sv
 		app-dicts/aspell-uk
 		app-dicts/aspell-es
@@ -44,6 +45,7 @@ DEPEND="
 		app-text/aspell
 		app-text/dictd
 		app-text/texlive
+		dev-db/riak
 		dev-java/sun-jdk
 		dev-java/maven-bin
 		dev-java/java-config
@@ -55,6 +57,7 @@ DEPEND="
 		dev-vcs/mercurial
 		dev-texlive/texlive-xetex
 		mail-client/mailx
+		mail-client/mutt
 		media-gfx/imagemagick
 		net-analyzer/ettercap
 		net-analyzer/metasploit
