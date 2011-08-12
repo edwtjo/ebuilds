@@ -33,7 +33,7 @@ DEPEND="
 		games-emulation/daphne
 		games-emulation/desmume
 		games-emulation/dosbox
-		games-emulation/dgen
+		games-emulation/dgen-sdl
 		games-emulation/emutos
 		games-emulation/fceux
 		games-emulation/gens
