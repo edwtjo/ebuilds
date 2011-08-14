@@ -103,6 +103,7 @@ DEPEND="
 		games-fps/gzdoom
 		games-fps/doom-data
 		games-fps/freedoom
+		games-mud/minetest
 "
 
 RDEPEND="${DEPEND}"
