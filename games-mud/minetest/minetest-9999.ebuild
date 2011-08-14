@@ -64,3 +64,12 @@ src_prepare() {
 	epatch "${FILESDIR}"/fix-texture-path.patch
 }
 
+pkg_preinst() {
+	enewgroup minetest
+	enewuser minetest -1 -1 /var/lib/minetest "minetest,games"
+	mkdir -p ${D}/var/lib/minetest
+	mkdir -p ${D}/etc/init.d
+	chown minetest:minetest ${D}/var/lib/minetest
+	cp "${FILESDIR}"/minetestserver.init ${D}/etc/init.d/minetestserver
+}
+
