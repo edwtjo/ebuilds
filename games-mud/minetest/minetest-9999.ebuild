@@ -37,14 +37,3 @@ src_unpack() {
 	git_src_unpack
 }
 
-src_install() {
-	dogamesbin bin/minetest || die "no client binary"
-	dogamesbin bin/minetestserver || die "no server binary"
-
-	insinto "${GAMES_DATADIR}"/${PN}
-	doins -r data/* || die "doins failed"
-	dodoc README.txt minetest.conf.example
-
-	prepgamesdirs
-}
-
