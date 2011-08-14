@@ -26,6 +26,13 @@ DEPEND="sys-libs/zlib
 		"
 RDEPEND="${DEPEND}"
 
+src_configure() {
+	sed -i -e "s|set(BINDIR \"bin|set(BINDIR \"games/bin|g" \
+		-e "s|set(DATADIR \"share/|set(DATADIR \"share/games/|g" \
+		CMakeLists.txt || die "could not redesignate paths"
+	cmake-utils_src_configure
+}
+
 src_unpack() {
 	git_src_unpack
 }
