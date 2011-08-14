@@ -1,14 +1,16 @@
 EAPI=3
 
-inherit eutils games cmake-utils git
+inherit eutils games cmake-utils versionator
 
 DESCRIPTION="An InfiniMiner/Minecraft inspired game."
 HOMEPAGE="http://celeron.55.lt/~celeron55/minetest/"
 
-EGIT_REPO_URI="git://github.com/celeron55/minetest.git"
+MY_PN="minetest"
+MY_PV=$(replace_version_separator 3 '_')
+MY_P="${PN}-${MY_PV}"
 
-SRC_URI=""
-S="${WORKDIR}/${PN}"
+SRC_URI="https://github.com/celeron55/minetest/tarball/0.2.20110731_3 -> ${MY_P}.tar.gz"
+S="${WORKDIR}/celeron55-minetest-ff1471b"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -50,11 +52,6 @@ src_configure() {
 		$(cmake-utils_use_use nls GETTEXT)"
 
 	cmake-utils_src_configure
-}
-
-src_unpack() {
-	git_src_unpack
-	cd $S
 }
 
 src_prepare() {
