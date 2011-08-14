@@ -35,5 +35,7 @@ src_configure() {
 
 src_unpack() {
 	git_src_unpack
+	cd $S
+	epatch "${FILESDIR}"/fix-texture-path.patch
 }
 
