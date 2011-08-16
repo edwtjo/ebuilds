@@ -20,7 +20,7 @@ DEPEND="
 		app-admin/conky
 		app-editors/gvim
 		app-emulation/wine
-		app-office/openoffice
+		app-office/libreoffice
 		app-text/xpdf
 		app-text/xournal
 		app-text/ghostscript-gpl
