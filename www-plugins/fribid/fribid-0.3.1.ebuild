@@ -4,6 +4,8 @@
 
 EAPI=3
 
+inherit eutils
+
 DESCRIPTION="A browser plugin to manage Swedish BankID:s"
 HOMEPAGE="http://fribid.se"
 SRC_URI="http://fribid.se/releases/source/${P}${V}.tar.bz2"
@@ -44,6 +46,10 @@ src_compile() {
 src_install() {
 	emake DESTDIR="${D}" install || die
 	dodoc CHANGELOG || die
+}
+
+src_prepare() {
+	epatch "${FILESDIR}/fix-64bit-pointer.patch"
 }
 
 pkg_postinst() {
