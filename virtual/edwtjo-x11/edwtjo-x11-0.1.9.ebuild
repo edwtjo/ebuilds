@@ -20,7 +20,7 @@ DEPEND="
 		app-admin/conky
 		app-editors/gvim
 		app-emulation/wine
-		app-office/openoffice
+		app-office/libreoffice
 		app-text/xpdf
 		app-text/xournal
 		app-text/ghostscript-gpl
@@ -175,13 +175,14 @@ DEPEND="
 		x11-libs/cairo
 		x11-libs/libXft
 		x11-libs/libXinerama
-		x11-misc/dzen
+		x11-misc/xmobar
 		x11-misc/xdotool
 		x11-misc/xtrlock
+		x11-misc/slim
+		x11-misc/xsel
 		x11-terms/xterm
 		x11-wm/xmonad
 		x11-wm/xmonad-contrib
-		x11-misc/slim
 		x11-terms/rxvt-unicode
 		x11-themes/slim-themes
 "
