@@ -58,11 +58,6 @@ src_configure() {
 	cmake-utils_src_configure
 }
 
-src_unpack() {
-	git_src_unpack
-	cd $S
-}
-
 src_prepare() {
 	# these should not be used during building anyway so we delete them
 	rm -rf src/{jthread,sqlite}
