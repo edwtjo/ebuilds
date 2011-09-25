@@ -6,7 +6,9 @@ inherit eutils
 DESCRIPTION="A browser plugin to manage Swedish BankID:s"
 HOMEPAGE="http://fribid.se"
 SRC_URI="http://github.com/samuellb/${PN}/tarball/v${PV} -> ${P}.tar.gz"
+
 TAG_HASH="dadb9c1"
+
 S="$WORKDIR/samuellb-fribid-$TAG_HASH"
 
 LICENSE="MIT MPL GPL-2"
