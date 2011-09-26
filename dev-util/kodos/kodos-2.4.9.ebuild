@@ -12,7 +12,7 @@ LICENSE="GPL-2"
 KEYWORDS="~amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
-DEPEND=">dev-python/PyQt-3.8.1"
+DEPEND=">=dev-python/PyQt4-4.8"
 RDEPEND="${DEPEND}"
 
 src_install() {
