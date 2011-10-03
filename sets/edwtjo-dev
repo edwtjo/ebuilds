@@ -1,0 +1,16 @@
+dev-vcs/git
+dev-vcs/subversion
+dev-vcs/mercurial
+dev-vcs/darcs
+sys-devel/automake
+sys-devel/bc
+sys-devel/binutils
+sys-devel/bison
+sys-devel/flex
+sys-devel/gcc
+sys-devel/gnuconfig
+sys-devel/m4
+sys-devel/make
+sys-devel/libtool
+sys-devel/llvm
+sys-devel/patch
