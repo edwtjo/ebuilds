@@ -42,6 +42,7 @@ media-sound/ripoff
 net-analyzer/netselect
 net-analyzer/tptest
 net-dns/libidn
+net-libs/enet
 net-misc/dhcpcd
 net-misc/iputils
 net-misc/keychain
