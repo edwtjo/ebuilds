@@ -1,12 +1,12 @@
-@edwtjo-hsbase
-dev-haskell/opengl
-dev-haskell/x11
 dev-haskell/fgl
 dev-haskell/glut
+dev-haskell/opengl
 dev-haskell/wxcore
 dev-haskell/wxdirect
 dev-haskell/wxhaskell
+dev-haskell/x11
 dev-haskell/x11-xft
+@edwtjo-hsbase
 x11-misc/xmobar
 x11-wm/xmonad
 x11-wm/xmonad-contrib
