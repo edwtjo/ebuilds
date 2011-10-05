@@ -1,0 +1,9 @@
+app-dicts/aspell-de
+app-dicts/aspell-es
+app-dicts/aspell-sv
+app-dicts/aspell-uk
+app-editors/vim
+app-text/aspell
+app-text/dictd
+app-text/texlive
+dev-texlive/texlive-xetex
