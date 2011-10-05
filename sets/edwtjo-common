@@ -38,7 +38,6 @@ mail-client/mailx
 mail-client/mutt
 media-gfx/imagemagick
 media-sound/moc
-media-sound/ripoff
 net-analyzer/netselect
 net-analyzer/tptest
 net-dns/libidn

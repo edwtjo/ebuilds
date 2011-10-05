@@ -9,9 +9,11 @@ app-text/xournal
 app-text/xpdf
 dev-util/tkdiff
 dev-vcs/giggle
+@edwtjo-common
 @edwtjo-fonts
 @edwtjo-hsx11
 lxde-base/lxrandr
+media-sound/ripoff
 sys-boot/unetbootin
 www-client/firefox
 www-plugins/adobe-flash
