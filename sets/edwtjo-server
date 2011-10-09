@@ -26,6 +26,7 @@ net-fs/samba
 net-fs/samba
 net-im/bitlbee
 net-irc/irssi
+net-misc/igmpproxy
 net-news/newsbeuter
 net-p2p/deluge
 net-p2p/rtorrent
