@@ -43,6 +43,7 @@ net-misc/openvpn
 net-misc/rsync
 net-misc/telnet-bsd
 net-misc/unison
+net-misc/vtun
 net-misc/wget
 net-misc/whois
 net-nntp/slrn
@@ -70,6 +71,7 @@ sys-apps/sed
 sys-apps/shadow
 sys-apps/smartmontools
 sys-apps/texinfo
+sys-apps/usermode-utilities
 sys-apps/which
 sys-block/partimage
 sys-boot/grub
