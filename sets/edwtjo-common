@@ -34,6 +34,7 @@ net-analyzer/netselect
 net-analyzer/tptest
 net-dns/libidn
 net-libs/enet
+net-misc/bridge-utils
 net-misc/dhcpcd
 net-misc/iputils
 net-misc/keychain
