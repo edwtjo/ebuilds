@@ -53,6 +53,7 @@ sys-apps/baselayout
 sys-apps/busybox
 sys-apps/coreutils
 sys-apps/diffutils
+sys-apps/ethtool
 sys-apps/file
 sys-apps/findutils
 sys-apps/gawk
