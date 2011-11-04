@@ -73,6 +73,8 @@ games-fps/sauerbraten
 games-fps/tremulous
 games-mud/minetest
 games-puzzle/pingus
+games-roguelike/adom
+games-roguelike/angband
 games-simulation/lincity-ng
 games-simulation/micropolis
 games-simulation/openttd
