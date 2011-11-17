@@ -12,7 +12,7 @@ MY_P="${PN}-${MY_PV}"
 
 SRC_URI="https://github.com/celeron55/minetest/tarball/${MY_PV} -> ${MY_P}.tar.gz"
 
-TAG_HASH="bdf5490"
+TAG_HASH="bc0e5c0"
 
 S="${WORKDIR}/celeron55-minetest-$TAG_HASH"
 
