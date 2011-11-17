@@ -62,7 +62,7 @@ src_prepare() {
 	# these should not be used during building anyway so we delete them
 	rm -rf src/{jthread,sqlite}
 	# default texture path reset to games prefix
-	epatch "${FILESDIR}"/fix-texture-path.patch
+	epatch "${FILESDIR}"/fix-texture-path-$MY_PV.patch
 }
 
 pkg_preinst() {
