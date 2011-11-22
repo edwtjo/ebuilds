@@ -35,6 +35,7 @@ net-analyzer/tptest
 net-dns/libidn
 net-libs/enet
 net-misc/bridge-utils
+net-misc/connect
 net-misc/dhcpcd
 net-misc/iputils
 net-misc/keychain
@@ -48,6 +49,7 @@ net-misc/vtun
 net-misc/wget
 net-misc/whois
 net-nntp/slrn
+net-proxy/tsocks
 sys-apps/ack
 sys-apps/baselayout
 sys-apps/busybox
