@@ -43,6 +43,7 @@ net-misc/openntpd
 net-misc/openssh
 net-misc/openvpn
 net-misc/rsync
+net-misc/socat
 net-misc/telnet-bsd
 net-misc/unison
 net-misc/vtun
