@@ -7,10 +7,6 @@ DESCRIPTION="An open source, highly scalable, schema-free document-oriented data
 HOMEPAGE="http://www.basho.com/"
 SRC_URI="https://github.com/basho/riak/tarball/$PN-$PV.tar.gz"
 
-TAG_HASH="06085d6"
-
-S="${WORKDIR}/basho-$PN-$TAG_HASH"
-
 LICENSE="Apache-2.0"
 SLOT="0"
 KEYWORDS="~amd64 ~x86"
