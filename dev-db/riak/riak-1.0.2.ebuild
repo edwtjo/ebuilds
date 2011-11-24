@@ -16,7 +16,7 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND=">=dev-lang/erlang-13.2.4"
+RDEPEND=">=dev-lang/erlang-14.2.3"
 DEPEND="${RDEPEND} 
 		>=dev-erlang/rebar-1"
 PATCHES=()
