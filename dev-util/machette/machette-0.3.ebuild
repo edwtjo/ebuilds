@@ -1,6 +1,6 @@
 EAPI=3
 
-inherit eutils git distutils
+inherit eutils distutils
 
 DESCRIPTION="An interactive regular expression tester"
 HOMEPAGE="http://thonpy.com/machette/"
@@ -10,7 +10,6 @@ SRC_URI="http://download.thonpy.com/projects/machette/releases/0.3/machette-0.3.
 LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
-IUSE="+client nls +server"
 
 DEPEND="
 dev-python/configobj
