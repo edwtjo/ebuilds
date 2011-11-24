@@ -16,8 +16,9 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-RDEPEND="dev-lang/erlang"
-DEPEND="${RDEPEND}"
+RDEPEND=">=dev-lang/erlang-13.2.4"
+DEPEND="${RDEPEND} 
+		>=dev-erlang/rebar-1"
 PATCHES=()
 RIAK_HOME="/var/lib/riak"
 
