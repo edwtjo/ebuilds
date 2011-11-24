@@ -9,7 +9,7 @@ SRC_URI="https://github.com/basho/riak-python-client/tarball/$P -> $P.tar.gz"
 
 TAG_HASH="986f6e0"
 
-S="$WORKDIR/basho-$P-$TAG_HASH"
+S="$WORKDIR/basho-$PN-$TAG_HASH"
 
 LICENSE="Apache-2.0"
 SLOT="0"
