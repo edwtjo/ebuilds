@@ -10,7 +10,7 @@ EGIT_REPO_URI="git://github.com/vbatoufflet/machette.git"
 SRC_URI=""
 S="${WORKDIR}/${PN}"
 
-LICENSE="GPL-2"
+LICENSE="GPL-3"
 SLOT="0"
 KEYWORDS="~x86 ~amd64"
 IUSE="+client nls +server"
