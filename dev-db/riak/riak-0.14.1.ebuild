@@ -1,17 +1,15 @@
-# Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
 EAPI=3
 
-inherit base versionator eutils
-
-MAJ_PV="$(get_major_version)"
-MED_PV="$(get_version_component_range 2)"
-MIN_PV="$(get_version_component_range 3)"
+inherit base eutils
 
 DESCRIPTION="An open source, highly scalable, schema-free document-oriented database"
 HOMEPAGE="http://www.basho.com/"
-SRC_URI="http://downloads.basho.com/${PN}/${PN}-${MAJ_PV}.${MED_PV}/${P}.tar.gz"
+SRC_URI="https://github.com/basho/riak/tarball/$PN-$PV.tar.gz"
+
+TAG_HASH="06085d6"
+
+S="${WORKDIR}/basho-$PN-$TAG_HASH"
 
 LICENSE="Apache-2.0"
 SLOT="0"
