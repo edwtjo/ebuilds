@@ -38,8 +38,10 @@ src_install() {
 	newgamesbin $S/neo/doom.x86 $PN || die "Failed to install executable"
 	dogameslib.so $S/neo/gamex86-base.so || die "Failed to install library"
 	dogameslib.so $S/neo/gamex86-d3xp.so || die "Failed to install library"
-	insinto "${GAMES_DATADIR}"/$PN
+	insinto "$GAMES_DATADIR"/$PN
 	doins -r $S/base || die "Failed to install basedir"
+	insinto "$GAMES_DATADIR/$PN/base"
+	doins $FILESDIR/default.cfg || die "Failed to install default configuration"
 	prepgamesdirs
 }
 
