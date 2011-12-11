@@ -12,11 +12,12 @@ dev-vcs/giggle
 @edwtjo-common
 @edwtjo-fonts
 @edwtjo-hsx11
+@edwtjo-music
 lxde-base/lxrandr
 media-sound/ripoff
+net-misc/rdesktop
 sys-boot/unetbootin
 www-client/firefox
-www-plugins/adobe-flash
 www-plugins/fribid
 x11-apps/xclipboard
 x11-apps/xfontsel
