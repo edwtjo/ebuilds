@@ -5,6 +5,7 @@ dev-lang/php
 dev-python/cheetah
 dev-python/pyopenssl
 dev-vcs/gitosis
+@edwtjo-dicts
 media-libs/sdl-image
 media-libs/win32codecs
 media-sound/audiotag
