@@ -28,9 +28,11 @@ x11-libs/cairo
 x11-libs/libXft
 x11-libs/libXinerama
 x11-misc/slim
+x11-misc/rss-glx
 x11-misc/xdotool
 x11-misc/xsel
 x11-misc/xtrlock
+x11-misc/xscreensaver
 x11-terms/rxvt-unicode
 x11-terms/xterm
 x11-themes/slim-themes
