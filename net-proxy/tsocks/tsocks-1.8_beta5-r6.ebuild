@@ -8,12 +8,11 @@ inherit multilib eutils autotools toolchain-funcs
 
 DESCRIPTION="Transparent SOCKS v4 proxying library"
 HOMEPAGE="http://tsocks.sourceforge.net/"
-SRC_URI="mirror://sourceforge/tsocks/${PN}-${PV/_}.tar.gz
-	tordns? ( mirror://gentoo/${PN}-${PV/_beta/b}-tordns1-gentoo-r1.patch.gz )"
+SRC_URI="mirror://sourceforge/tsocks/${PN}-${PV/_}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="alpha amd64 arm ppc ppc64 sparc x86 ~x86-fbsd"
+KEYWORDS="~alpha ~amd64 ~arm ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE="tordns"
 
 S="${WORKDIR}/${P%%_*}"
@@ -22,7 +21,7 @@ src_prepare() {
 	epatch "${FILESDIR}/gentoo-r3.patch"
 	epatch "${FILESDIR}/bsd.patch"
 	epatch "${FILESDIR}/poll.patch"
-	use tordns && epatch "../${PN}-${PV/_beta/b}-tordns1-gentoo-r1.patch"
+	use tordns && epatch "${FILESDIR}/tordns1-r2.patch"
 	eautoreconf
 }
 
