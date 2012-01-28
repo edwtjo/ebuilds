@@ -9,6 +9,7 @@ app-arch/tar
 app-arch/unace
 app-arch/unzip
 app-crypt/gnupg
+app-crypt/mcrypt
 app-misc/jail
 app-misc/mc
 app-misc/rlwrap
@@ -85,9 +86,11 @@ sys-fs/cryptsetup
 sys-fs/ddrescue
 sys-fs/dosfstools
 sys-fs/e2fsprogs
+sys-fs/encfs
 sys-fs/lvm2
 sys-fs/mdadm
 sys-fs/mtd-utils
+sys-fs/sshfs-fuse
 sys-fs/udev
 sys-kernel/gentoo-sources
 sys-kernel/mm-sources
