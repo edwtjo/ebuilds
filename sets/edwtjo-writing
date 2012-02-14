@@ -4,7 +4,9 @@ app-dicts/aspell-sv
 app-dicts/aspell-uk
 app-editors/vim
 app-text/aspell
+app-text/chm2pdf
 app-text/dictd
+app-text/djvu
 app-text/htmldoc
 app-text/texlive
 dev-texlive/texlive-xetex
