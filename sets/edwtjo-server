@@ -4,7 +4,7 @@ app-misc/uptimed
 dev-lang/php
 dev-python/cheetah
 dev-python/pyopenssl
-dev-vcs/gitosis
+dev-vcs/gitolite
 @edwtjo-dicts
 media-libs/sdl-image
 media-libs/win32codecs

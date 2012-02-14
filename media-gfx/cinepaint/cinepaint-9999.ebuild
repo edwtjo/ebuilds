@@ -29,7 +29,7 @@ RDEPEND="x11-libs/gtk+
 	>=media-libs/lcms-1.16
 	media-libs/tiff
 	media-libs/jpeg
-	x11-libs/fltk:1.1[opengl]
+	x11-libs/fltk:2[opengl]
 	x11-libs/libXmu
 	x11-libs/libXinerama
 	x11-libs/libXpm
@@ -59,12 +59,12 @@ src_configure() {
 	my_parms=""
 	if has_version "x11-libs/gtk+:2" ; then
 		my_parms="${my_parms} --enable-gtk2"
-	else 
+	else
 		my_parms="${my_parms} --disable-gtk2"
 	fi
 	if has_version "x11-libs/gtk+:1" ; then
 		my_parms="${my_parms} --enable-gtk1"
-	else 
+	else
 		my_parms="${my_parms} --disable-gtk1"
 	fi
 	einfo "executig main ./configure"

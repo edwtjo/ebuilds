@@ -5,5 +5,7 @@ app-dicts/aspell-uk
 app-editors/vim
 app-text/aspell
 app-text/dictd
+app-text/htmldoc
 app-text/texlive
 dev-texlive/texlive-xetex
+dev-libs/chmlib
