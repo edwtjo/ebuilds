@@ -8,6 +8,7 @@ app-text/chm2pdf
 app-text/dictd
 app-text/djvu
 app-text/htmldoc
+app-text/ghostscript-gpl
 app-text/texlive
 dev-texlive/texlive-xetex
 dev-libs/chmlib
