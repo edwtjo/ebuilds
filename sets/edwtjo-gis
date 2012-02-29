@@ -1,0 +1,5 @@
+sci-libs/geos
+dev-db/spatialite
+dev-db/postgis
+sci-geosciences/gdal-grass
+sci-libs/gdal
