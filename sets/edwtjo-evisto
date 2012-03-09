@@ -1,0 +1,5 @@
+dev-db/postgresql-server
+dev-db/redis
+dev-lang/v8
+net-libs/nodejs
+net-libs/npm
