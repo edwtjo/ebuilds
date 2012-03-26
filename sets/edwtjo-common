@@ -10,6 +10,7 @@ app-arch/unace
 app-arch/unzip
 app-crypt/gnupg
 app-crypt/mcrypt
+app-emulation/virtinst
 app-misc/jail
 app-misc/mc
 app-misc/rlwrap
@@ -34,6 +35,8 @@ media-sound/moc
 net-analyzer/netselect
 net-analyzer/tptest
 net-dns/libidn
+net-firewall/iptables
+net-firewall/ebtables
 net-libs/enet
 net-misc/bridge-utils
 net-misc/connect

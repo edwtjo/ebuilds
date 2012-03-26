@@ -21,7 +21,6 @@ net-analyzer/cacti-spine
 net-dns/dnsmasq
 net-dns/openresolv
 net-dns/unbound
-net-firewall/iptables
 net-fs/netatalk
 net-fs/samba
 net-fs/samba
