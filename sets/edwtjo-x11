@@ -6,7 +6,6 @@ app-office/libreoffice
 app-text/ghostscript-gpl
 app-text/mupdf
 app-text/xournal
-app-text/xpdf
 dev-util/tkdiff
 dev-vcs/giggle
 @edwtjo-common
