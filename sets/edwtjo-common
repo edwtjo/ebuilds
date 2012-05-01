@@ -96,7 +96,6 @@ sys-fs/mtd-utils
 sys-fs/sshfs-fuse
 sys-fs/udev
 sys-kernel/gentoo-sources
-sys-kernel/mm-sources
 sys-libs/gpm
 sys-libs/ncurses
 sys-libs/readline
