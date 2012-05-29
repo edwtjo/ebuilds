@@ -48,6 +48,7 @@ net-misc/openssh
 net-misc/openvpn
 net-misc/rsync
 net-misc/socat
+net-misc/strongswan
 net-misc/telnet-bsd
 net-misc/unison
 net-misc/vtun
@@ -59,6 +60,7 @@ sys-apps/ack
 sys-apps/baselayout
 sys-apps/busybox
 sys-apps/coreutils
+sys-apps/clrngd
 sys-apps/diffutils
 sys-apps/ethtool
 sys-apps/file
@@ -76,12 +78,14 @@ sys-apps/net-tools
 sys-apps/openrc
 sys-apps/pciutils
 sys-apps/pv
+sys-apps/rng-tools
 sys-apps/sed
 sys-apps/shadow
 sys-apps/smartmontools
 sys-apps/texinfo
 sys-apps/usermode-utilities
 sys-apps/which
+sys-apps/timer_entropyd
 sys-block/partimage
 sys-boot/grub
 sys-boot/syslinux
