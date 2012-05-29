@@ -27,12 +27,14 @@ net-fs/samba
 net-im/bitlbee
 net-irc/irssi
 net-misc/igmpproxy
+net-misc/strongswan
 net-news/newsbeuter
 net-p2p/deluge
 net-p2p/rtorrent
 net-proxy/dante
 net-proxy/privoxy
 sys-power/nut
+sys-apps/rng-tools
 www-apache/mod_fastcgi
 www-apache/mod_jk
 www-apache/mod_proxy_html
