@@ -25,6 +25,7 @@ DEPEND=">=dev-libs/openssl-0.9.8
 RDEPEND="${DEPEND}"
 
 src_configure() {
+	cd $S
 	fribidconf=""
 	if use pkcs11 ; then
 		fribidconf="
