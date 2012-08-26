@@ -49,10 +49,6 @@ src_install() {
 	dodoc CHANGELOG || die
 }
 
-src_prepare() {
-	epatch "${FILESDIR}/fix-64bit-pointer.patch"
-}
-
 pkg_postinst() {
 	if use dev ; then
 		sed -i -e "s|^# enable_pinpad = true|enable_pinpad = true|" \
