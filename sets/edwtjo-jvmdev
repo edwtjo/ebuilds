@@ -1,5 +1,5 @@
 app-admin/eselect-maven
 dev-java/java-config
 dev-java/maven-bin
-dev-java/sun-jdk
+dev-java/icedtea
 dev-util/android-sdk-update-manager
