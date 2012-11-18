@@ -1,83 +1,116 @@
 # Distributed under the terms of the GNU General Public License v2
 
 EAPI=4
+inherit eutils cmake-utils gnome2-utils vcs-snapshot user games
 
-inherit eutils games cmake-utils vcs-snapshot user
-
-DESCRIPTION="An InfiniMiner/Minecraft inspired game."
-HOMEPAGE="http://celeron.55.lt/~celeron55/minetest/"
-SRC_URI="https://github.com/celeron55/minetest/tarball/${MY_PV} -> ${MY_P}.tar.gz"
-
-TAG_HASH="bc0e5c0"
-
-S="${WORKDIR}/celeron55-minetest-$TAG_HASH"
+DESCRIPTION="An InfiniMiner/Minecraft inspired game"
+HOMEPAGE="http://c55.me/minetest/"
+SRC_URI="http://github.com/celeron55/minetest/tarball/${PV} -> ${P}.tar.gz"
 
 LICENSE="LGPL-2.1+ CCPL-Attribution-ShareAlike-3.0"
 SLOT="0"
 KEYWORDS="~*"
-IUSE="+client nls +server"
+IUSE="dedicated nls +server"
 
-DEPEND="sys-libs/zlib
-		nls? ( sys-devel/gettext )
-		>=dev-games/irrlicht-1.7
-		x11-libs/libX11
-		virtual/opengl
+RDEPEND="dev-db/sqlite:3
+	dev-lang/lua
+	>=dev-libs/jthread-1.2
+	sys-libs/zlib
+	!dedicated? (
 		app-arch/bzip2
-		media-libs/libpng
-		dev-db/sqlite:3
-		>=dev-libs/jthread-1.2
-		"
-RDEPEND="${DEPEND}"
+		media-libs/libogg
+		media-libs/libpng:0
+		media-libs/libvorbis
+		media-libs/openal
+		virtual/jpeg
+		virtual/opengl
+		x11-libs/libX11
+		x11-libs/libXxf86vm
+	)
+	nls? ( virtual/libintl )"
+
+DEPEND="${RDEPEND}
+	>=dev-games/irrlicht-1.7
+	nls? ( sys-devel/gettext )"
+
+pkg_setup() {
+	games_pkg_setup
+
+	if use server || use dedicated ; then
+		enewuser ${PN} -1 -1 /var/lib/${PN} ${GAMES_GROUP}
+	fi
+}
 
 src_unpack() {
 	vcs-snapshot_src_unpack
 }
 
+src_prepare() {
+	epatch \
+		"${FILESDIR}"/${P}-jthread.patch \
+		"${FILESDIR}"/${P}-lua.patch
+
+	rm -r src/{jthread,lua,sqlite} || die
+
+	# set paths
+	sed \
+		-e "s#@BINDIR@#${GAMES_BINDIR}#g" \
+		-e "s#@GROUP@#${GAMES_GROUP}#g" \
+		"${FILESDIR}"/minetestserver.conf > "${T}"/minetestserver.conf || die
+}
+
 src_configure() {
-	# we redesignate installation paths to the games prefix and
-	# intentionally break project supplied jthread and sqlite source
-	sed -i -e "s|set(BINDIR \"bin|set(BINDIR \"games/bin|g" \
-		-e "s|set(DATADIR \"share/|set(DATADIR \"share/games/|g" \
-		-e "/^if (SQLITE/,/^endif (SQLITE/d" \
-		-e "/^if (JTHREAD/,/^endif (JTHREAD/d" \
-		CMakeLists.txt || die "games prefix paths not reset"
-
-	# we also need to redesignate the language file location since
-	# it shouldn't live in /usr/share/games/locale..
-	sed -i -e \
-	"s|GETTEXT_MO_DEST_PATH \${DATADIR}/|GETTEXT_MO_DEST_PATH \${DATADIR}/../|g" \
-		cmake/Modules/FindGettextLib.cmake || die "locale path not reset"
-
-	mycmakeargs="
+	local mycmakeargs=(
 		-DRUN_IN_PLACE=0
-		-DJTHREAD_INCLUDE_DIR=${EROOT}/usr/include/jthread
-		$(cmake-utils_use_build client CLIENT)
-		$(cmake-utils_use_build server SERVER)
-		$(cmake-utils_use_use nls GETTEXT)"
+		-DCUSTOM_SHAREDIR="${GAMES_DATADIR}/${PN}"
+		-DCUSTOM_BINDIR="${GAMES_BINDIR}"
+		-DCUSTOM_DOCDIR="/usr/share/doc/${PF}"
+		$(usex dedicated "-DBUILD_SERVER=ON -DBUILD_CLIENT=OFF" "$(cmake-utils_use_build server SERVER) -DBUILD_CLIENT=ON")
+		$(cmake-utils_use_enable nls GETTEXT)
+		)
 
 	cmake-utils_src_configure
 }
 
-src_prepare() {
-	# these should not be used during building anyway so we delete them
-	rm -rf src/{jthread,sqlite}
-	# default texture path reset to games prefix
-	epatch "${FILESDIR}"/fix-texture-path-$MY_PV.patch
+src_compile() {
+	cmake-utils_src_compile
 }
 
 src_install() {
 	cmake-utils_src_install
 
-	if use server; then
-		newinitd "${FILESDIR}/minetestserver.initd" minetestd
-		newconfd "${FILESDIR}/minetestserver.conf" minetestd
+	if use server || use dedicated ; then
+		newinitd "${FILESDIR}"/minetestserver.init minetestd
+		newconfd "${T}"/minetestserver.conf minetestd
 	fi
+
+	prepgamesdirs
 }
 
 pkg_preinst() {
-	enewgroup minetest
-	enewuser minetest -1 -1 /var/lib/minetest "minetest,games"
-	mkdir -p ${D}/var/lib/minetest
-	chown minetest:minetest ${D}/var/lib/minetest
+	games_pkg_preinst
+	gnome2_icon_savelist
 }
 
+pkg_postinst() {
+	games_pkg_postinst
+	gnome2_icon_cache_update
+
+	if ! use dedicated ; then
+		elog
+		elog "optional dependencies:"
+		elog "	games-mud/minetest-mod (official mod)"
+		elog
+	fi
+
+	if use server || use dedicated ; then
+		elog
+		elog "Configure your server via /etc/conf.d/minetestd"
+		elog "The user \"minetest\" is created with /var/lib/${PN} homedir."
+		elog
+	fi
+}
+
+pkg_postrm() {
+	gnome2_icon_cache_update
+}
