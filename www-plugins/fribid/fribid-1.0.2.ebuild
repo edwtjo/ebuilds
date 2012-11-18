@@ -1,17 +1,13 @@
 # Distributed under the terms of the GNU General Public License v2
 # $Header: $
 
-EAPI=3
+EAPI=4
 
-inherit eutils
+inherit eutils vcs-snapshot
 
 DESCRIPTION="A browser plugin to manage Swedish BankID:s"
 HOMEPAGE="http://fribid.se"
 SRC_URI="http://github.com/samuellb/${PN}/tarball/v${PV} -> ${P}.tar.gz"
-
-TAG_HASH="59ffc3d"
-
-S="$WORKDIR/samuellb-fribid-$TAG_HASH"
 
 LICENSE="MIT MPL GPL-2"
 SLOT="0"
