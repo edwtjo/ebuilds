@@ -1,0 +1,9 @@
+# I do not consider git ebuilds stable enough to be unmasked.
+
+# Mask for FriBID git version
+=www-plugins/fribid-9999
+
+# Mask for Minetest git version
+=games-mud/minetest-9999
+=games-mud/minetest-mod-9999
+
