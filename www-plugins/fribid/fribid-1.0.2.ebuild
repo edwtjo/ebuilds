@@ -1,5 +1,4 @@
 # Distributed under the terms of the GNU General Public License v2
-# $Header: $
 
 EAPI=4
 
@@ -11,7 +10,7 @@ SRC_URI="http://github.com/samuellb/${PN}/tarball/v${PV} -> ${P}.tar.gz"
 
 LICENSE="MIT MPL GPL-2"
 SLOT="0"
-KEYWORDS="~x86 ~amd64 ~mips ~sparc"
+KEYWORDS="~*"
 IUSE="smartcard pkcs11 dev"
 
 DEPEND=">=dev-libs/openssl-0.9.8
