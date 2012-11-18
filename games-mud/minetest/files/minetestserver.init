@@ -1,26 +1,38 @@
 #!/sbin/runscript
 
+description="Minetest server"
+
 depend() {
   need net
-  provide mineserver
 }
 
 start() {
+  ebegin "Starting $SVCNAME"
 	start-stop-daemon \
 		--start \
-		--user minetest \
-		--group minetest \
+		--user $USER \
+		--group $GROUP \
 		--make-pidfile \
+		--pidfile $PID \
 		--background \
-		--stdout /var/lib/minetest/server.log \
-		--exec /usr/games/bin/minetestserver \
-		--pidfile /var/run/minetest.pid
+		--quiet \
+		--stdout $LOG \
+		--exec $EXEC -- $ARGS
+	eend $?
 }
 
 stop() {
+  ebegin "Stopping $SVCNAME"
 	start-stop-daemon \
 		--stop \
-		--exec /usr/games/bin/minetestserver \
-		--pidfile /var/run/minetest.pid
+		--quiet \
+		--pidfile $PID
+	eend $?
 }
 
+reload() {
+        ebegin "Reloading $SVCNAME"
+        start-stop-daemon --signal HUP \
+            --exec "$EXEC" --pidfile "$PID"
+        eend $?
+}
