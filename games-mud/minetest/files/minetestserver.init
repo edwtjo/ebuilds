@@ -16,8 +16,7 @@ start() {
 		--pidfile $PID \
 		--background \
 		--quiet \
-		--stdout $LOG \
-		--exec $EXEC -- $ARGS
+		--exec $EXEC -- "--logfile $LOG $ARGS"
 	eend $?
 }
 
