@@ -29,12 +29,12 @@ DEPEND="sys-libs/zlib
 		app-arch/bzip2
 		media-libs/libpng
 		dev-db/sqlite:3
-		>=dev-libs/jthread-1.2
+		=dev-libs/jthread-1.2.1-r1
 		"
 RDEPEND="${DEPEND}"
 
 src_configure() {
-	# we redesignate installation paths to the games prefix and 
+	# we redesignate installation paths to the games prefix and
 	# intentionally break project supplied jthread and sqlite source
 	sed -i -e "s|set(BINDIR \"bin|set(BINDIR \"games/bin|g" \
 		-e "s|set(DATADIR \"share/|set(DATADIR \"share/games/|g" \
