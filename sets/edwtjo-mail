@@ -1,3 +1,4 @@
+app-misc/abook
 app-misc/muttprint
 mail-filter/imapfilter
 mail-client/mutt
@@ -5,4 +6,5 @@ mail-filter/procmail
 net-mail/archivemail
 net-mail/mairix
 net-mail/offlineimap
+net-misc/urlview
 www-client/links
