@@ -1,7 +1,3 @@
-# Copyright 1999-2013 Gentoo Foundation
-# Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/strongswan/strongswan-5.0.4.ebuild,v 1.5 2013/05/11 11:18:38 ago Exp $
-
 EAPI=2
 inherit eutils linux-info user
 
@@ -100,11 +96,19 @@ src_configure() {
 		myconf="${myconf} --enable-attr-sql --enable-sql"
 	fi
 
+	# enable PAM authentication as a xauth backend
+	# xauth-pam can be used as a eap-gtc backend which is useful
+	# if you, for instance, want to authenticate against ldap
+	# without setting up a radiusd
+	if use pam;then
+		myconf="${myconf} --enable-xauth-pam"
+	fi
+
 	# strongSwan builds and installs static libs by default which are
 	# useless to the user (and to strongSwan for that matter) because no
 	# header files or alike get installed... so disabling them is safe.
 	if use pam && use eap; then
-		myconf="${myconf} --enable-eap-gtc --enable-xauth-pam"
+		myconf="${myconf} --enable-eap-gtc"
 	else
 		myconf="${myconf} --disable-eap-gtc"
 	fi
