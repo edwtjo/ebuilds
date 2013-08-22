@@ -23,7 +23,6 @@ app-shells/bash
 app-shells/zsh
 app-shells/zsh-completion
 dev-python/psycopg
-dev-util/lafilefixer
 dev-util/strace
 @edwtjo-netsec
 @edwtjo-pentest
