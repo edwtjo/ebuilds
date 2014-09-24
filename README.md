@@ -10,5 +10,5 @@ Source the added portage overlays:
 
 And run:
 
-        layman -o https://github.com/edwtjo/ebuilds/raw/master/overlay.xml -f -a edwtjo-ebuilds 
+        layman -a edwtjo-ebuilds
 
