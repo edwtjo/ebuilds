@@ -35,7 +35,7 @@ src_configure() {
 		${fribidconf} \
 		--datadir=/usr/share \
 		--prefix=/usr \
-		--with-gtk=3 \
+		--with-gtk=2 \
 		--plugin-path=/usr/lib/nsbrowser/plugins || die
 }
 
